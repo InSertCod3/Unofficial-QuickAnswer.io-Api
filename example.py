@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from client import quickanswersapi as qapi
+from client import quickanswersapi
 
-t = qapi.api()
-print t.get("when was google founded?$####")
+qapi = quickanswersapi.api('json')
+print qapi.get("What was the budget of Titanic (1997)?")
