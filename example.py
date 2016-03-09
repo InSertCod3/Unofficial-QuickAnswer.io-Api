@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from client import quickanswersapi
+from quickanswersapi import client
 
-qapi = quickanswersapi.api('json')
-print qapi.get("What was the budget of Titanic (1997)?")
+answers = client.api(json = False)
+results = answers.get("What was the budget of Titanic (1997)?")
+print (results)
