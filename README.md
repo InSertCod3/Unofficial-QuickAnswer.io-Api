@@ -5,7 +5,7 @@ How-To:
 
 ```python
 >>> from quickanswersapi import client
->>> answers = client.api(json = False)
+>>> answers = client.api(json = True)
 >>> results = answers.get("What was the budget of Titanic (1997)?")
 >>> print (results)
 ...{
